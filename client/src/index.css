@@ -1922,6 +1922,38 @@ a:hover {
   background: #6498e7 !important;
   width :90px
 }
+.azumaya,
+.phnompenh,
+.allbranch{
+  color: #fff;
+  text-align: center;
+  height: 24px;
+  line-height: 24px;
+  font-size: 1.2rem;
+  margin-right: 10px ;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.azumaya{
+  background: #482979;
+  width: 80px;
+}
+.phnompenh{
+  background: #6c2312;
+  width :80px;
+}
+.allbranch{
+  background-color: #F75A5A;
+  width: 100px;
+}
+.allbranch_home{
+  background-color: #F75A5A !important;
+  width: 90px
+}
+.phnompennh_home{
+  background: #6c2312 !important;
+  width: 90px
+}
 .news_time-home{
   color: black;
   background: none;

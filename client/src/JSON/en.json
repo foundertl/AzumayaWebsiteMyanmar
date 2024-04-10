@@ -13,6 +13,7 @@
         "hcm": "Ho Chi Minh",
         "hp": "Hai Phong",
         "dn": "Da Nang",
+        "pp":"PhnomPenh",
         "allbranch": "All branch",
         "vietnam": "Vietnam",
         "cambodia": "Cambodia",
@@ -3706,6 +3707,241 @@
         }
         
     ],
+    "error":{
+        "title":"The page you are looking for does not exist",
+        "content":"Return to",
+        "feedback_title":"Feedback Form: Website Error Reporting",
+        "feedback_content":"Thank you for visiting our new website! We strive to provide you with the best experience possible, and your feedback is invaluable in helping us achieve that goal. \nIf you have encountered any errors, bugs, or issues while using our website, please take a moment to fill out this form. \nYour input will assist our team in identifying and resolving these issues promptly.",
+        "feedback_instruction":"Instructions:",
+        "feedback_instruction1":"+ Please provide as much detail as possible about the error or issue you encountered.",
+        "feedback_instruction2":"+ Include information such as the page URL, steps to reproduce the error, browser/device used, and any error messages displayed.",
+        "feedback_instruction3":"+ Your feedback will remain confidential and will only be used for improving our website.",
+        "feedback_1":"Describe the error or issue encountered:",
+        "feedback_2":"URL of the page where the error occurred:",
+        "feedback_3":"Steps to reproduce the error (if known):",
+        "feedback_4":"Browser and device used (e.g., Chrome on Windows, Safari on iPhone):",
+        "feedback_5":"Additional comments or screenshots (if available):",
+        "feedback_6":"Choose Image:"
+    },
+    "home_pp": {
+        "name": "Azumaya Hotel",
+        "news_title": "WHAT'S NEWS ?",
+        "welcome_title": "Welcome to Azumaya Hotel",
+        "welcome_sub-title": "Comfort served for business travelers",
+        "welcome_content": "Nowadays, more and more businessmen from advanced countries move into Phnom Penh (Cambodia). However, during the stay, there must be many anxieties to face; such as languages and food. For their distress, we had one mission came into our mind. “Why don’t we provide comfortable space to relieve their stress?” The answer was clear: we prepare Rotenburo (open air bath tub) and foot massage to soothe their tiredness, and authentic Japanese breakfast & continental breakfast for their daily vitality. Following ― English-available receptionist, pick-up / drop-off service from / to airport, free laundry service for long-stay customers, free high-speed Wi-Fi service, arrangement service for rental car / tour, etc. Moreover, “Omotenashi” (Japanese hospitality) is always in our heart to serve you a pleasure in life of foreign land.",
+        "line_link": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1698027481/AzumayaWeb/osinqzr0vyumuje789dn.jpg",
+        "line_btn": "Click here for detail",
+        "new_item": [
+            {
+                "id": 1,
+                "new": " AZUMAYA COFFEE AND SNACK OPEN",
+                "link": "https://azumayavietnam.com/open-women-rotenburo-in-azumaya-kim-ma-2-branch/",
+                "month": "Jul",
+                "day": "7th",
+                "year": 2023,
+                "location": "PhnomPenh"
+            },
+            {
+                "id": 2,
+                "new": "Re-opening Open Air Hot Bath for Visitor from 24th May 2023",
+                "link": "https://azumayavietnam.com/open-women-rotenburo-in-azumaya-kim-ma-2-branch/",
+                "month": "Jul",
+                "day": "7th",
+                "year": 2023,
+                "location": "PhnomPenh"
+            },
+            {
+                "id": 3,
+                "new": "Notice of Open Air Hot Bath Visitor Service Closing from April 1st 2022",
+                "link": "https://azumayavietnam.com/open-women-rotenburo-in-azumaya-kim-ma-2-branch/",
+                "month": "Jul",
+                "day": "7th",
+                "year": 2023,
+                "location": "PhnomPenh"
+            },
+            {
+                "id": 4,
+                "new": "Re-opening Open Air Hot Bath and Massage from October 18th, 2021",
+                "link": "https://azumayavietnam.com/open-women-rotenburo-in-azumaya-kim-ma-2-branch/",
+                "month": "Jul",
+                "day": "7th",
+                "year": 2023,
+                "location": "PhnomPenh"
+            }
+        ]
+    },
+    "feature_pp": {
+        "name": "Feature",
+        "continue":"Continue Reading",
+        "main_title": "Azumaya Hotel's 8 Characteristics",
+        "main_content": "Thank you always for your kind attention to Azumaya Hotel.Azumaya Hotel is a Japanese-style business hotel opened in Phnom Penh for whom are stressed out with their business trip and looking for comfortable place to be relieved. We serve 6 characteristics of service with the same quality as our Vietnam branches.",
+        "feature_item": [
+            {
+                "id": 1,
+                "title": "Reasonable price from $40 per night",
+                "content": "All rooms have shower toilet and amenity which are ordered from Japanese supplyer, 8 kinds of amenities including small head toothbrush, shaving and conditioner are prepared. You can stay with cheaper price with signing our contract. We would like offer more discounts for long term resident. Please feel free to contact to our receptionist.",
+                "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1698027481/AzumayaWeb/gfphcji3cfcq61hynkot.jpg",
+                "num": "No 1"
+            },
+            {
+                "id": 2,
+                "title": "Best location for Japanese businessmen",
+                "content": "We are located in front of the Phnom Penh Tower, which can save up your commute time. In addition, it is easily accessible to various sites in Phnom Penh.",
+                "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1705390320/AzumayaWeb/f2-1_pjlnx4.jpg",
+                "num": "No 2"
+            },
+            {
+                "id": 3,
+                "title": "Japanese-style open-air hot bath with Sauna",
+                "content": "Here is the only place you can find Japanese style hot tub in Phnom Penh. We also have cold water bathtub, which you can experience sensational feeling of comfort in this roasting country.\n※ Women time : 11:15pm-1:15am (everyday)",
+                "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1698027481/AzumayaWeb/h027ndrvhudkswop9bee.jpg",
+                "num": "No 3",
+                "hasLink": true,
+                "link": "/Service/Test/breakfast#rotenburo"
+            },
+            {
+                "id": 4,
+                "title": "Japanese breakfast",
+                "content": "Grilled fish, stewed meat, fried seafood, sautéed vegetables, and some other remarkable Japanese dishes you can enjoy. We also have authentic continental breakfast for whom wants to have a break for Asian food. From 2017, we are going to have buffet from 6am to 8am.",
+                "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1698027483/AzumayaWeb/nlsyeqwpqkna8vrareip.jpg",
+                "hasLink": true,
+                "num": "No 4",
+                "link": "/Service/Test/breakfast"
+            },
+            {
+                "id": 5,
+                "title": "Original style foot massage",
+                "content": "Completely outstanding and memorable massage opened in Phnom Penh. Over 90% are the repeat customers in Vietnam, we have absolute confident in our massage. Mainly we rub and push the point from head, shoulder, back, and finally to feet. To release the tiredness, find yourself great pleasure at our massage.",
+                "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1698027483/AzumayaWeb/lmfoarojredf2s6aojoy.jpg",
+                "num": "No 7",
+                "hasLink": true,
+                "link": "/Service/Test/massage"
+            },
+            {
+                "id": 6,
+                "title": "Japanese hospitality",
+                "content": "We serve you with our Japanese available staff and manager for whom are not confident with English speaking.",
+                "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1698027483/AzumayaWeb/m3weovuhk4pgmsh2xgud.jpg",
+                "num": "No 6"
+            },
+            {
+                "id": 7,
+                "title": "Japanese TV shows available",
+                "content": "You can watch the main local Japanese TV shows such as NHK, TBS, Fuji TV, Nihon TV in live same as you do in Japan. Please lean back and relax watching your favorite TV shows.",
+                "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1705390320/AzumayaWeb/JPTV_oueohf.jpg",
+                "num": "No 5"
+            },
+            {
+                "id": 8,
+                "title": "Japanese Restaurant Tenant Wanted",
+                "content": "We are looking for restaurant tenants who have a great passion to serve delicious food to our guests and local customers. For more details, please contact us by email.",
+                "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1707123029/AzumayaWeb/wanted-en_yhr6un.png",
+                "num": "No 8"
+            }
+        ]
+    },
+    "policy_pp": {
+        "title": "Hotel Policies",
+        "data": [
+            {
+                "name": "CHECK-IN",
+                "content": "After 15:00."
+            },
+            {
+                "name": "CHECK-OUT",
+                "content": "Until 12:00"
+            },
+            {
+                "name": "EARLY CHECK-IN",
+                "content": "Will be subject to the availability of hotel room status.\n- Check in early until 10:00 : 100% charged of one night room rate.\n- Check in early from 10:00 and before 15:00 : 50% charged of one night room rate."
+            },
+            {
+                "name": "CHECK-OUT LATE",
+                "content": "Will be subject to the availability of hotel room status.\n- Check out late until 18:00 : 50% charged of the one night.\n- Check out late from 18:00 : 100% charged of the one night."
+            },
+            {
+                "name": "NO SHOW",
+                "content": "100% charged one night."
+            },
+            {
+                "name": "LATE CANCELLATION",
+                "content": "- In 48 hours prior to 15:00 of check in date : 50% charged of overnight.\n- In 24 hours prior to 15:00 of check in date: 100% charged overnight."
+            },
+            {
+                "name": "EARLY CHECK-OUT",
+                "content": "- In 48 hours prior to 15:00 of new check out date: 50% charged of one last night.\n- In 24 hours prior to 15:00 of new check out date: 100% charged of one last night."
+            },
+            {
+                "name": "ADVANNCED PAYMENT BEFORE CHECK-OUT",
+                "content": "We do welcome the payment before check-out to make it smoothly."
+            },
+            {
+                "name": "Exchange rate is based on",
+                "content": "The hotel rate upon check-out date for non-contractor. The selling rate of ACLEDA BANK at 6:00 upon check-out date for contractor."
+            },
+            {
+                "name": "Please be noted ",
+                "content": "1.The Booking Confirmation (we will send you by e-mail) should be showed to Reception upon Check-in.\n2.The valid Passport ( non Cambodian ) or ID ( Cambodian ) is required for guest registration as Cambodian laws"
+            }
+        ]
+    },
+    "caption": [
+        {
+            "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1711787350/AzumayaWeb/Rotenburo/RTBR_KM2_f7f3j8.jpg",
+            "caption": "Azumaya Hotel Kim Ma 2",
+            "name":"Ha Noi",
+            "link": "/kim-ma-2-detail/room"
+        },
+        {
+            "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1711787616/AzumayaWeb/Rotenburo/RTBR_HP_rqdjyc.png",
+            "caption": "Azumaya Hotel Hai Phong",
+            "name":"Hai Phong",
+            "link": "/hai-phong/room"
+        },
+        {
+            "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1708923672/AzumayaWeb/Rotenburo/rtbrdn3_rscz5x.jpg",
+            "caption": "Azumaya Hotel Da Nang",
+            "name":"Da Nang",
+            "link": "/da-nang/room"
+        },
+        {
+            "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1711787352/AzumayaWeb/Rotenburo/RTBR_TVL1_fv00lo.jpg",
+            "caption": "Azumaya Hotel Thai Van Lung 1",
+            "name":"Ho Chi Minh",
+            "link": "/thai-van-lung-1-detail/room"
+        },
+        {
+            "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1711787343/AzumayaWeb/Rotenburo/RTBR_HBT1_seeimp.jpg",
+            "caption": "Azumaya Hotel Hai Ba Trung 1",
+            "name":"Ha Noi",
+            "link": "/hai-ba-trung-detail/room"
+        },
+        {
+            "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1711787359/AzumayaWeb/Rotenburo/RTBR_LL_gk9ute.jpg",
+            "caption": "Azumaya Hotel Linh Lang",
+            "name":"Ha Noi",
+            "link": "/linh-lang-detail/room"
+        },
+        {
+            "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1711787356/AzumayaWeb/Rotenburo/RTBR_KM3_m9iq0n.png",
+            "caption": "Azumaya Hotel Kim Ma 3",
+            "name":"Ha Noi",
+            "link": "/kim-ma-3-detail/room"
+        },
+        {
+            "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1711787354/AzumayaWeb/Rotenburo/RTBR_LTT_t4rpue.jpg",
+            "caption": "Azumaya Hotel Le Thanh Ton",
+            "name":"Ho Chi Minh",
+            "link": "/le-thanh-ton-detail/room"
+        },
+        {
+            "image": "https://res.cloudinary.com/dtdfsaaei/image/upload/v1711787353/AzumayaWeb/Rotenburo/RTBR_TVL2_zmyz4b.jpg",
+            "caption": "Azumaya Hotel Thai Van Lung 2",
+            "name":"Ho Chi Minh",
+            "link": "/thai-van-lung-2-detail/room"
+        }
+        
+    ],
     "service_breakfast": {
         "openHour": "《Opening Hour》",
         "price": "《Visitor Price》",
@@ -3714,17 +3950,17 @@
             {
                 "row1": "Mon ~ Sat",
                 "row2": "Buffet :",
-                "row4": "06:00 ~ 08:00"
+                "row4": "6:00 ~ 8:00"
             },
             {
                 "row1": "",
                 "row2": "Set menu :",
-                "row4": "06:00 ~ 10:00"
+                "row4": "6:00 ~ 10:00"
             },
             {
                 "row1": "Sun",
                 "row2": "Set menu :",
-                "row4": "06:00 ~ 10:00"
+                "row4": "6:00 ~ 10:00"
             }
         ],
         "table2": [
@@ -3749,7 +3985,7 @@
         "table_hcm1": [
             {
                 "row1": "Weekday :",
-                "row2": "06:00 ~ 10:00"
+                "row2": "6:00 ~ 10:00"
             },
             {
                 "row1": "",
@@ -3757,7 +3993,7 @@
             },
             {
                 "row1": "Weekend :",
-                "row2": "07:00 ~ 24:00"
+                "row2": "7:00 ~ 24:00"
             }
         ],
         "table_hcm2": [
@@ -3781,9 +4017,9 @@
         "table_hn1": [
             {
                 "row1": "Weekday :",
-                "row2": "06:00 ~ 09:00",
+                "row2": "6:00 ~ 9:00",
                 "row3": "Weekday :",
-                "row4": "06:00 ~ 09:00"
+                "row4": "6:00 ~ 9:00"
             },
             {
                 "row1": "",
@@ -3793,9 +4029,9 @@
             },
             {
                 "row1": "Weekend :",
-                "row2": "07:00 ~ 23:00",
+                "row2": "7:00 ~ 23:00",
                 "row3": "Weekend :",
-                "row4": "07:00 ~ 23:00"
+                "row4": "7:00 ~ 23:00"
             }
         ],
         "table_hn2": [
@@ -3811,7 +4047,7 @@
         "table_dn1": [
             {
                 "row1": "Weekday :",
-                "row2": "06:00 ~ 09:00"
+                "row2": "6:00 ~ 9:00"
             },
             {
                 "row1": "",
@@ -3834,7 +4070,7 @@
         "table_hp1": [
             {
                 "row1": "Weekday :",
-                "row2": "06:00 ~ 09:00"
+                "row2": "6:00 ~ 9:00"
             },
             {
                 "row1": "",
@@ -3887,7 +4123,6 @@
         "reservation": "Reservation ",
         "contact": "Contact Us",
         "contact_title": "Kindly select a preferred method of contact with us",
-        "image":"https://res.cloudinary.com/dtdfsaaei/image/upload/v1709281239/AzumayaWeb/Az_website_service_page_EN_page-0003_oa9abr.jpg",
         "table_ll1": [
             {
                 "row1": "Weekday",
@@ -3919,7 +4154,7 @@
             },
             {
                 "row1": "Weekend",
-                "row2": "12:00 ~ 22:30 "
+                "row2": "12:00 ~ 22:30"
             }
         ],
         "table_dn2": [
@@ -3986,23 +4221,6 @@
         "time":"Time",
         "minutes": "minutes",
         "special":"Special note"
-        
-    },
-    "error":{
-        "title":"The page you are looking for does not exist",
-        "content":"Return to",
-        "feedback_title":"Feedback Form: Website Error Reporting",
-        "feedback_content":"Thank you for visiting our new website! We strive to provide you with the best experience possible, and your feedback is invaluable in helping us achieve that goal. \nIf you have encountered any errors, bugs, or issues while using our website, please take a moment to fill out this form. \nYour input will assist our team in identifying and resolving these issues promptly.",
-        "feedback_instruction":"Instructions:",
-        "feedback_instruction1":"+ Please provide as much detail as possible about the error or issue you encountered.",
-        "feedback_instruction2":"+ Include information such as the page URL, steps to reproduce the error, browser/device used, and any error messages displayed.",
-        "feedback_instruction3":"+ Your feedback will remain confidential and will only be used for improving our website.",
-        "feedback_1":"Describe the error or issue encountered:",
-        "feedback_2":"URL of the page where the error occurred:",
-        "feedback_3":"Steps to reproduce the error (if known):",
-        "feedback_4":"Browser and device used (e.g., Chrome on Windows, Safari on iPhone):",
-        "feedback_5":"Additional comments or screenshots (if available):",
-        "feedback_6":"Choose Image:"
     }
     
 

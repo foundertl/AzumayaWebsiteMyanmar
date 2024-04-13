@@ -25,8 +25,8 @@ function Reservation({token}) {
   const payMethod2 = t("reservation.method2", { returnObjects: true });
   const earlyInNote =t("reservation.earlyIn_note", { returnObjects: true });
   const lateOutNote =t("reservation.lateOut_note", { returnObjects: true });
-  const [selectedCity, setSelectedCity] = useState('hotel-hcm');
-  const [selectedBranch, setSelectedBranch] = useState('le-thanh-ton-detail');
+  const [selectedCity, setSelectedCity] = useState('hotel-pp');
+  const [selectedBranch, setSelectedBranch] = useState('phnom-penh-detail');
   const [selectedRoom, setSelectedRoom] = useState(t('booking.room_placeholder'));
   const a = t("header.reservation")
   const b = t("header.title")
@@ -773,7 +773,7 @@ function Reservation({token}) {
               <select
                 className={errors.selectedBranch ? "col-md-2 form__content validate_failed" : "col-md-2 form__content " }
                 value={selectedBranch}
-                disabled={!selectedCity}
+                // disabled={!selectedCity}
                 onChange={(e)=> setSelectedBranch(e.target.value)}
                 >
                 {filteredBranches.map((item) => (

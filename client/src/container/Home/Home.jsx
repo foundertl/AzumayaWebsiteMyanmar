@@ -87,7 +87,7 @@ const AutoPlaySlider =  withAutoplay(AwesomeSlider)
           <div className="container">
             <div className="row align-item-center justify-content-center">
               <div className="col-md-12 col-lg-10" style={{marginTop: 60}}>
-                <h2 className="content__news-title" style={{fontWeight:'bold'}}>{t("home.news_title")}</h2>
+                <h2 className="content__news-title" style={{fontWeight:'bold'}}>{t("home_pp.news_title")}</h2>
                 <ul className="content__news-list">
                 {homeNews.map((article) => {
                  const parsedDate = parse(article.date, 'yyyy-MM-dd', new Date()); 
@@ -130,14 +130,14 @@ const AutoPlaySlider =  withAutoplay(AwesomeSlider)
                   <div className="content__qr">
                     <img
                       className="content__qr-img"
-                      src={t("home.line_link")}
+                      src={t("home_pp.line_link")}
                       alt="qr line azumaya hotel"
                     />
                     <button 
                     onClick={() => setModalShow(true)
                     }
                     className="base__btn btn--detail">
-                      {t("home.line_btn")}
+                      {t("home_pp.line_btn")}
                     </button>
                    <LineModal
                    show = {modalShow}
@@ -165,7 +165,7 @@ const AutoPlaySlider =  withAutoplay(AwesomeSlider)
       </AnimatedOnScroll>
       <AnimatedOnScroll>
         <div className="content__feature">
-          <div className="content__feature-title">{t("feature.name")}</div>
+          <div className="content__feature-title">{t("feature_pp.name")}</div>
           <div className="container-fluid">
             <div className="row" style={{ justifyContent: "center" }}>
               {featureItem.map((item) => (
@@ -185,7 +185,7 @@ const AutoPlaySlider =  withAutoplay(AwesomeSlider)
                       <Link 
                       className="continue_link" 
                       to = {`/Feature/${item.id}`}
-                      >{t("feature.continue")}</Link></p>
+                      >{t("feature_pp.continue")}</Link></p>
                     </div>
                   </div>
                 </div>

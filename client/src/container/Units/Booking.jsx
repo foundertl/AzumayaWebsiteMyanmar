@@ -6,37 +6,15 @@ import { format } from 'date-fns';
 export default function Booking (){
     const {t} = useTranslation()
     const navigate = useNavigate()
-    const city = t('booking.city', {returnObjects:true})
-    const branch = t('booking.branch', {returnObjects:true})
+    const city = t('booking.pp_city', {returnObjects:true})
+    const branch = t('booking.pp_branch', {returnObjects:true})
 
     const [startDate, setStartDate] = useState('');
     const [endDate, setEndDate] = useState('');
-    const [selectedCity, setSelectedCity] = useState('hotel-hcm');
-    const [selectedBranch, setSelectedBranch] = useState('le-thanh-ton-detail');
+    const [selectedCity, setSelectedCity] = useState('hotel-pp');
+    const [selectedBranch, setSelectedBranch] = useState('phnom-penh-detail');
     const flatBranches = [].concat(...branch)
     const filteredBranches = flatBranches.filter(b => b.city_id == selectedCity)
-
-    const handleBranchValue = (cityId) => {
-        switch(cityId) {
-          case 'hotel-hn':
-            setSelectedBranch('hai-ba-trung-detail')
-            break;
-          case 'hotel-dn': 
-            setSelectedBranch('da-nang');
-            break;
-          case 'hotel-hp':
-            setSelectedBranch('hai-phong');
-            break;
-          default:
-            setSelectedBranch('');
-        }
-      };
-
-      const handleCityChange = (e) => {
-        const cityId = e.target.value;
-        setSelectedCity(cityId);
-        handleBranchValue(cityId);
-      };
 
     const handleSendData = () => {
         const data = {
@@ -84,22 +62,17 @@ export default function Booking (){
                     <select className="content__booking-branch-select"
                     id={selectedCity}
                     value={selectedCity}
-                    onChange= {handleCityChange}>
-                        {city.map(item => (
-                            <option className="p-3" key={item.id} value={item.id}>{item.city_name}</option>
-                        ))}
+                    onChange= {(e) => setSelectedCity(e.target.value)}>
+                     <option className="p-3" key={city} value={selectedCity}>{city}</option>
                     </select>
                 </div>
                 </div>
                 <div className="col-md-2">
                 <div className="content__booking-hotel-select">
                     <select className="content__booking-hotel-name-select"
-                    // disabled={!selectedCity}
                     value={selectedBranch}
                     onChange={(e)=> setSelectedBranch(e.target.value)}>
-                        {filteredBranches.map((item, index) => (
-                            <option className="p-3" key = {item.branch_id} value={item.branch_id}>{item.branch_name}</option>
-                        ))}
+                        <option className="p-3" key = {branch} value={selectedBranch}>{branch}</option>
                     </select>
                 </div>
                 </div>

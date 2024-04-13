@@ -26,11 +26,13 @@ import LTTRoomDetail from "./components/BranchDetail/le-thanh-ton-detail/room";
 import AnnexRoomDetail from "./components/BranchDetail/annex-detail/room";
 import DNRoomDetail from "./components/BranchDetail/da-nang/room";
 import HPRoomDetail from "./components/BranchDetail/hai-phong/room";
+import PhnomPenhRoomDetail from './components/BranchDetail/phnom-penh-detail/room';
 import ThankYou from './container/Reservation/ThankYou';
 import VietnamService from "./container/Service/Service"
 import ErrorPage from './container/Units/ErrorPage';
 import Feedback from './container/Units/Feedback';
 import Reservation_backup from './container/Reservation/Reservation_backup'
+import Gallery_PP from './container/Gallery/Gallery';
 
 function NewRouter(props) {
     const {news} = props;
@@ -65,7 +67,7 @@ function NewRouter(props) {
                 <Route path = "/massage" element={<VietnamService />} />
                 {/* <Route path="/Service" element={<Service />} /> */}
                 <Route path="/contract" element={<Contract />} />
-                
+                <Route path = "/gallery" element = {<Gallery_PP />} />
                 <Route path="/en/thank-you/:selectedCity" element={<ThankYou />} />
                 <Route path="/ja/thank-you/:selectedCity" element={<ThankYou />} />
                 <Route path="/vie/thank-you/:selectedCity" element={<ThankYou />} />
@@ -87,6 +89,7 @@ function NewRouter(props) {
                 <Route path="/annex-detail/room" element={<AnnexRoomDetail />} />
                 <Route path="/da-nang/room" element={<DNRoomDetail />} />
                 <Route path="/hai-phong/room" element={<HPRoomDetail />} />
+                <Route path="/phnom-penh-detail/room" element={<PhnomPenhRoomDetail />} />
                 <Route path='*' element={<ErrorPage />} />
                 <Route path='/feedback' element={ <Feedback /> } />                
                 <Route path="/backup" element={<Reservation_backup />} />

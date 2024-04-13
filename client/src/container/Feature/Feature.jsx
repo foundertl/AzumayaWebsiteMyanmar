@@ -7,7 +7,7 @@ import HelmetLayout from "../../components/HelmetLayout/HelmetLayout";
 
 export default function Feature() {
   const { t } = useTranslation();
-  const featureItem = t("feature.feature_item", { returnObjects: true });
+  const featureItem = t("feature_pp.feature_item", { returnObjects: true });
   const a = t("header.feature")
   const b = t("header.title")
   const c = a + " | "+ b
@@ -28,7 +28,7 @@ export default function Feature() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>{t("feature.name")}</h1>
+              <h1>{t("feature_pp.name")}</h1>
             </div>
           </div>
         </div>
@@ -61,10 +61,10 @@ export default function Feature() {
           <div className="row">
             <div className="col-md-12">
               <div className="feature__content-title">
-                <h2>{t("feature.main_title")}</h2>
+                <h2>{t("feature_pp.main_title")}</h2>
               </div>
               <div className="feature__content-background">
-                <p className="highlight__text">{t("feature.main_content")}</p>
+                <p className="highlight__text">{t("feature_pp.main_content")}</p>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function Feature() {
                       <p className="card-text">{item.content}</p>
                       <div className="btn-holder">
                       <div className="btn__detail control-position">
-                        <Link to = {item.link}>{t("hn-branch.btn-detail")}</Link>
+                        <Link to = {item.link}>{t("home_pp.line_btn")}</Link>
                       </div>
                       </div>
                     </div>

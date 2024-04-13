@@ -1,21 +1,15 @@
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { useState, useEffect } from "react";
-import { Tab, Tabs, TabList } from "react-tabs";
 import Cookies from "js-cookie";
-import Avatar from 'react-avatar';
 function Header() {
   const { t, i18n } = useTranslation();
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     Cookies.set('selectedLanguage', lng, {expires: 365})
-    
   };
-  const feature = t("feature.feature_item", { returnObjects: true });
-  const hcm = t("hcm-branch.branch", {returnObjects:true})
-  const hn = t("hn-branch.branch", {returnObjects:true})
-  const dn = t("dn-branch.branch", {returnObjects:true})
-  const hp = t("hp-branch.branch", {returnObjects:true})
+  const feature = t("feature_pp.feature_item", { returnObjects: true });
   const service = t("service.service_name", {returnObjects:true})
   const [isOpen, setIsOpen] = useState(false)
 
@@ -57,7 +51,6 @@ function Header() {
       document.body.style.position = "";
     }
   })
-;
  
   const HeaderMobile = () => {
     return(
@@ -72,7 +65,7 @@ function Header() {
             <Link
               onClick={()=> setIsOpen(false)}
               Link
-              to="/news"
+              to="/"
               className="header__mobile-navbar-link"
             >
               {t("header.home")}
@@ -80,47 +73,11 @@ function Header() {
           </li>
           <li className="header__mobile-navbar-item">
             <Link
-              to="/q&a"
+              to="/policies"
               onClick={()=> setIsOpen(false)}
               className="header__mobile-navbar-link"
             >
               {t("header.policies")}
-            </Link>
-          </li>
-          <li className="header__mobile-navbar-item">
-            <Link
-              to="/hotel-hn"
-              onClick={()=> setIsOpen(false)}
-              className="header__mobile-navbar-link"
-            >
-              {t("header.hn")}
-            </Link>
-          </li>
-          <li className="header__mobile-navbar-item">
-            <Link
-              to="/hotel-hcm"
-              onClick={()=> setIsOpen(false)}
-              className="header__mobile-navbar-link"
-            >
-              {t("header.hcm")}
-            </Link>
-          </li>
-          <li className="header__mobile-navbar-item">
-            <Link
-              to="/hotel-dn"
-              onClick={()=> setIsOpen(false)}
-              className="header__mobile-navbar-link"
-            >
-              {t("header.dn")}
-            </Link>
-          </li>
-          <li className="header__mobile-navbar-item">
-            <Link
-              to="/hotel-hp"
-              onClick={()=> setIsOpen(false)}
-              className="header__mobile-navbar-link"
-            >
-              {t("header.hp")}
             </Link>
           </li>
           <li className="header__mobile-navbar-item">
@@ -143,35 +100,25 @@ function Header() {
           </li>
           <li className="header__mobile-navbar-item">
             <Link
-              to="/service"
+              to="Service/Test/breakfast"
               onClick={()=> setIsOpen(false)}
               className="header__mobile-navbar-link"
             >
               {t("header.service")}
             </Link>
           </li>
-          {/* <li className="header__mobile-navbar-item">
-            <Link
-              to="/Massage"
-              onClick={()=> setIsOpen(false)}
-              className="header__mobile-navbar-link"
-            >
-              {t("header.massage")}
-            </Link>
-          </li> */}
           <li className="header__mobile-navbar-item">
             <Link
-              to="/contract"
+              to="/contact"
               onClick={()=> setIsOpen(false)}
               className="header__mobile-navbar-link"
             >
-              {t("header.contract")}
+              {t("header.contact")}
             </Link>
           </li>
         </ul>
     )
   }
-
   const [active, setActive] = useState(false)
   const handleActive = () => {
     setActive(!active)
@@ -182,25 +129,25 @@ function Header() {
                 <div className='container'>
                     <div className='row align-items-center'>
                         <div className='col-md-10'>
-                        <p style={{marginLeft:'220px'}}>{t('header.top-header')}</p>
+                        <p style={{marginLeft:'110px'}}>{t('header.top-header')}</p>
                         </div>
                         <div className='btn-lang col-md-2'>
                         <button className ='btn-en mr-3' onClick={()=>changeLanguage('en')}></button>                
                         <button className ='btn-ja mr-3' onClick={()=>changeLanguage('ja')}></button>  
-                        <button className ='btn-vie mr-3' onClick={()=>changeLanguage('vie')}></button>  
-                        {/* <button className ='btn-kor mr-3' onClick={()=>changeLanguage('kor')}></button>   */}
+                        {/* <button className ='btn-vie mr-3' onClick={()=>changeLanguage('vie')}></button>  
+                        <button className ='btn-kor mr-3' onClick={()=>changeLanguage('kor')}></button>   */}
                         </div>
                     </div>
                 </div>
             </div>
-      <div className="header_container">
+     <div className="header_container">
       <div className="header-2">
         <div className="header__PC-2">
           <div className="header__logo">
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
-                  <Link to="/">
+                  <Link to="/Cambodia/Cambodia">
                     <img
                       src="https://res.cloudinary.com/dtdfsaaei/image/upload/v1700714360/AzumayaWeb/nyvyprbkrs1v54vdmwib.png"
                       alt="logo"
@@ -210,9 +157,9 @@ function Header() {
               </div>
             </div>
           </div>
-          <ul className="header__navbar-list-2">
-            <li className="header__navbar-item header-reserve"> 
-              <Link
+          {/* <ul className="header__navbar-list-2">
+            <li className="header__navbar-item header-reserve">
+            <Link
                 className={`header__navbar-link header-reserve ${active? 'tab_active' : ''}`}
                 onClick={handleActive}
                 onBlur={(e)=>setActive(false)}
@@ -225,10 +172,10 @@ function Header() {
             <li className="header__navbar-item header-reserve">
               <Link
                 className="header__navbar-link header-reserve"
-                to="/Cambodia/Cambodia"
+                to="/"
                 style={{ color: "#fff" }}
               >
-                {t("header.cambodia")}
+                {t("header.vietnam")}
               </Link>
             </li>
             <li className="header__navbar-item header-reserve">
@@ -255,7 +202,7 @@ function Header() {
                  />
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
         <div className="header__mobile-logo">
           <Link to="/">
@@ -273,12 +220,12 @@ function Header() {
           </button>
         </div>
         <HeaderMobile />
-      </div>
-      </div>
-     <div className="is-sticky">
-     <div className="container">
-      <div className="header" style={{backgroundColor: backgroundColor}}>
-        <Tabs
+        </div>
+        </div>
+        <div className="is-sticky">
+        <div className="container">
+          <div className="header" style={{backgroundColor:backgroundColor}}>
+       <Tabs
         // selectedTabClassName="service__active" 
         className="header__PC">
              <TabList className="header__navbar-list mb-0 justify-content-start">
@@ -297,7 +244,8 @@ function Header() {
               </div>
             </div>
           </div>
-                </Tab>
+      
+      </Tab>
               </TabList>      
                   <TabList className="header__navbar-list mb-0">
                   <Tab className="header__navbar-item">
@@ -306,69 +254,15 @@ function Header() {
                       </Link>
                     </Tab>
                     <Tab className="header__navbar-item">
-                      <Link className="header__navbar-link-2" to="/news">
+                      <Link className="header__navbar-link-2" to="/news-list">
                         {t("header.news")}
                       </Link>
                     </Tab>
-                    <Tab className="header__navbar-item">
-                      <Link className="header__navbar-link-2" to="/hotel-hcm">
-                        {t("header.hcm")}
+                    <Tab className="header__navbar-item" >
+                      <Link className="header__navbar-link-2" style={{width:130}} to="/phnom-penh-detail/room">
+                        {t("header.room")}
                       </Link>
-                      <ul className="header__navbar-item-list" style={{width:200}}>
-                        {hcm.map((item)=>(
-                          <li className = "header__navbar-sub-link" >
-                          <Link 
-                          to ={item.link}>{item.name}
-                          </Link>
-                            </li>
-                        ))}
-                        </ul>
                     </Tab>
-                    <Tab className="header__navbar-item">
-                      <Link className="header__navbar-link-2" to="/hotel-hn">
-                        {t("header.hn")}
-                      </Link>
-                      <ul className="header__navbar-item-list" style={{width:200}}>
-                        {hn.map((item)=>(
-                          <li className = "header__navbar-sub-link" >
-                          <Link
-                          to ={item.link}>{item.name}
-                          </Link>
-                            </li>
-                        ))}
-                        </ul>
-                    </Tab>
-                    <Tab className="header__navbar-item">
-                      <Link className="header__navbar-link-2" to="/hotel-dn">
-                        {t("header.dn")}
-                      </Link>
-                      <ul className="header__navbar-item-list" style={{width:200}}>
-                        {dn.map((item)=>(
-                          <li className = "header__navbar-sub-link" >
-                          <Link 
-                          to ={item.link}>{item.name}
-                          </Link>
-                            </li>
-                        ))}
-                        </ul>
-                    </Tab>
-                    <Tab className="header__navbar-item">
-                      <Link className="header__navbar-link-2" to="/hotel-hp">
-                        {t("header.hp")}
-                      </Link>
-                      <ul className="header__navbar-item-list" style={{width:200}}>
-                        {hp.map((item)=>(
-                          <li className = "header__navbar-sub-link" >
-                          <Link 
-                          to ={item.link}>{item.name}
-                          </Link>
-                            </li>
-                        ))}
-                        </ul>
-                    </Tab>
-
-                    {/* <Tab className="header__navbar-item">
-                            <Link  className = "header__navbar-link-2" to = '/Reservation'>{t('header.item3')}</Link></Tab> */}
                     <Tab className="header__navbar-item">
                       <Link className="header__navbar-link-2" to="/feature">
                         {t("header.feature")}
@@ -377,7 +271,7 @@ function Header() {
                         {feature.map((item)=>(
                           <Tab className = "header__navbar-sub-link">
                           <Link 
-                          to ={`/Feature/${item.id}`}> 
+                          to ={`/feature/${item.id}`}> 
                           <span style={{backgroundColor:"#482979", padding:"5px", marginRight:"8px"}}>
                             {item.num}</span>{t(item.title)}
                             </Link>
@@ -389,7 +283,7 @@ function Header() {
                       <Link className="header__navbar-link-2" to="/service">
                         {t("header.service")}
                       </Link>
-                      <ul className="header__navbar-item-list" style={{width: 240}}>
+                      <ul className="header__navbar-item-list" style={{width: 100}}>
                         {service.map((item)=>(
                           <li className = "header__navbar-sub-link" >
                           <Link 
@@ -399,11 +293,17 @@ function Header() {
                         ))}
                         </ul>
                     </Tab>
+                    
                     <Tab className="header__navbar-item">
-                      <Link className="header__navbar-link-2" style={{width:140}} to="/contract">
+                      <Link className="header__navbar-link-2" to="/contract">
                         {t("header.contract")}
                       </Link>
                     </Tab>
+                    {/* <Tab className="header__navbar-item">
+                      <Link className="header__navbar-link-2" to="/gallery">
+                        {t("header.gallery")}
+                      </Link>
+                    </Tab> */}
                     <Tab className="header__navbar-item">
                       <Link className="header__navbar-link-2" to="/reservation">
                         {t("header.reservation")}
@@ -414,16 +314,11 @@ function Header() {
                         {t("header.policies")}
                       </Link>
                     </Tab>
-                    <Tab className="header__navbar-item">
-                      <Link className="header__navbar-link-2" style={{width:130}} to="/feedback">
-                        {t("header.feedback")}
-                      </Link>
-                    </Tab>
                   </TabList>
                   </Tabs>
             </div>
-          </div>
-     </div>
+            </div>
+            </div>
     </>
   );
 }

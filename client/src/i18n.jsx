@@ -4,7 +4,6 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector'
 import translationEN from './JSON/en.json'
 import translationJA from './JSON/ja.json'
-import translationVIE from './JSON/vie.json'
 import translationKOR from './JSON/kor.json'
 const resources = {
   en: {
@@ -13,9 +12,6 @@ const resources = {
   ja: {
     translation: translationJA
 },
-  vie: {
-    translation: translationVIE
-  },
   kor: {
     translation: translationKOR
   }

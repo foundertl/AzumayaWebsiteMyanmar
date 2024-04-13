@@ -5,8 +5,8 @@ import HelmetLayout from "../../components/HelmetLayout/HelmetLayout";
 
 export default function Policies(){
     const {t} = useTranslation()
-    const data = t('policy.data',{returnObjects:true})
-    const faq = t('faq.data', {returnObjects:true})
+    const data = t('policy_pp.data',{returnObjects:true})
+    const faq = t('faq_pp.data', {returnObjects:true})
     const a = t("header.policies")
     const b = t("header.title")
     const c = a + " | "+ b
@@ -18,7 +18,7 @@ export default function Policies(){
                     <div classNameName="container">
                         <div className="row">
                             <div className="col-md-12">
-                                <h1>{t('policy.title')}</h1>
+                                <h1>{t('policy_pp.title')}</h1>
                             </div>
                         </div>
                     </div>

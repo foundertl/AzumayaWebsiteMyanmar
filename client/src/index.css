@@ -1,3 +1,37 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.branch-closed-notice {
+  background-color: #ffe6e6;
+  border: 2px solid #ff0000;
+  border-radius: 5px;
+  padding: 20px;
+  margin:  20px 0;
+  text-align: center;
+}
+
+.branch-closed-notice h2 {
+  color: #ff0000;
+}
+
+.branch-closed-notice p {
+  color: #333;
+}
+.myanmar_container{
+  padding-top: 12%;
+  height: 100%;
+  width: 100%;
+}
 html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -795,7 +829,7 @@ code {
   background-color: #09e009 !important; 
 }
 .content__welcome{
-  background: url(https://res.cloudinary.com/dtdfsaaei/image/upload/v1701655335/AzumayaWeb/welcome-bg_z5dr6z.jpg) center center / cover no-repeat;
+  background: url(https://azumayavietnam.com/image/rtbr/rtbrdn5.jpg) center center / cover no-repeat;
   background-attachment: fixed;
   font-size: 18px;
   line-height: 1.4em;
@@ -968,7 +1002,7 @@ code {
 .reservation__content{
   width: 100%;
   padding: 250px 0;
-  background: url(https://res.cloudinary.com/dtdfsaaei/image/upload/v1698027484/AzumayaWeb/rd2qg5wkfxdoarlvcuwl.jpg) center center / cover no-repeat fixed;
+  background: url(https://azumayavietnam.com/image/reservation/rsvt-bg.jpg) center center / cover no-repeat fixed;
   background-attachment: fixed;
   position: relative;
   text-align: center;
@@ -1076,7 +1110,7 @@ code {
 .policies__header {
   width: 100%;
   padding: 200px 0;
-  background: url(https://res.cloudinary.com/dtdfsaaei/image/upload/v1712654045/AzumayaWeb/banner_r3uovx.jpg) center center / cover no-repeat;
+  background: url(https://azumayavietnam.com/image/feature/banner.jpg) center center / cover no-repeat;
   background-attachment: fixed;
   position: relative;
   text-align: center;
@@ -1128,7 +1162,7 @@ code {
 .feature__content-background{
   width: 100%;
   padding: 150px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://res.cloudinary.com/dtdfsaaei/image/upload/v1698027482/AzumayaWeb/xdnpuoiovao4jlwxfa0b.jpg) center center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://azumayavietnam.com/image/feature/bg-feature.jpg) center center / cover no-repeat;
 
 }
 .highlight__text{
@@ -1187,7 +1221,7 @@ code {
 .service__header {
   width: 100%;
   padding: 200px 0;
-  background: url(https://res.cloudinary.com/dtdfsaaei/image/upload/v1712654045/AzumayaWeb/banner_r3uovx.jpg) center center / cover no-repeat;
+  background: url(https://azumayavietnam.com/image/feature/banner.jpg) center center / cover no-repeat;
   background-attachment: fixed;
   position: relative;
   text-align: center;
@@ -1741,7 +1775,6 @@ a:hover {
   margin-bottom: 10px;
 }
 .contract-form label {
-  display: block;
   font-weight: 700;
   color: #333;
   text-align: left;
@@ -1922,38 +1955,6 @@ a:hover {
   background: #6498e7 !important;
   width :90px
 }
-.azumaya,
-.phnompenh,
-.allbranch{
-  color: #fff;
-  text-align: center;
-  height: 24px;
-  line-height: 24px;
-  font-size: 1.2rem;
-  margin-right: 10px ;
-  margin-top: 5px;
-  font-weight: 600;
-}
-.azumaya{
-  background: #482979;
-  width: 80px;
-}
-.phnompenh{
-  background: #6c2312;
-  width :80px;
-}
-.allbranch{
-  background-color: #F75A5A;
-  width: 100px;
-}
-.allbranch_home{
-  background-color: #F75A5A !important;
-  width: 90px
-}
-.phnompennh_home{
-  background: #6c2312 !important;
-  width: 90px
-}
 .news_time-home{
   color: black;
   background: none;
@@ -2057,7 +2058,7 @@ filter: brightness(0.5);
   position: absolute;
   right: 20px;
   bottom: 20px;
-  width: 240px!important;
+  width: 260px!important;
   height: 60px !important;
   z-index: 3;
   font-size: 1.6rem;
@@ -2314,6 +2315,20 @@ filter: brightness(0.5);
   justify-content: center;
   align-items: center;
 }
+.error_message-email{
+  width: 120px !important;
+  height: 42px;
+  padding: 5px;
+  margin-right: 10px;
+  background-color: #ffcccc;
+  color: #cc0000; 
+  font-size: 1rem;
+  border-radius: 4px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .validate_failed{
   border-color: red !important;
 }
@@ -2351,7 +2366,13 @@ filter: brightness(0.5);
   appearance: textfield;
   width: auto; /* Adjust width as needed */
 }
-
+.promo-text{
+  font-size: 1.4rem;
+}
+.promo-title{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 @media (-moz-touch-enabled: 0), (pointer: fine) {
   .service__location:hover{
     color: white;
@@ -2408,7 +2429,7 @@ filter: brightness(0.5);
   }
   .header__mobile-logo img{
     width: 100px;
-    height: 40px;
+    height: 60px;
   }
   .content__title span{
     top: 12%;
@@ -2677,6 +2698,15 @@ font-size: 1.2rem !important;
   padding-right: 5px;
   margin-top: 10px;
   font-size: 2rem !important  ;
+}
+.policies__header{
+  padding: 100px 0;
+}
+.reservation__content{
+  padding: 100px 0;
+}
+.service__header{
+  padding: 100px 0;
 }
 }
 /* tablet */

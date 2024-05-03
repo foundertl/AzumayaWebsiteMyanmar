@@ -1,79 +1,60 @@
-import { useState, useEffect } from "react";
-import { useTranslation } from 'react-i18next'
-import Header from "./container/Units/Header.jsx";
-import Footer from "./container/Units/Footer.jsx";
-import Cookies from "js-cookie";
-// import Login from "./container/Login/Login.jsx";
-// import SignUp from "./container/Login/SignUp.jsx";
-import NewRouter from "./NewRouter.jsx";
-import ScrollToTop from "./units/ScrollToTop.js";
-import './index.css'
-import './base.css'
 import './App.css';
+import './index.css'
+import { Link } from 'react-router-dom';
 
 function App() {
-
-  const display = !['/Login','/SignUp'].some(substring =>location.pathname.includes(substring))
-  const [showTop, setShowTop] = useState(false)
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-    Cookies.set('selectedLanguage', lng, {expires: 365})
-  };
-  useEffect(()=>{
-    const savedLang = Cookies.get('selectedLanguage');
-    if(savedLang && i18n.language !== savedLang){
-      i18n.changeLanguage(savedLang)
-    }
-  })
-  const [news, setNews] = useState([])
-  useEffect(() =>{
-              const handleScroll = () => {
-                  setShowTop(window.scrollY >= 1000)
-              }
-              window.addEventListener('scroll', handleScroll);
-      
-              return () => {
-              window.removeEventListener('scroll', handleScroll);
-              }
-          }
-  )
-  function scrollToTop() {
-             window.scrollTo({top:0, behavior: 'smooth'})
-          }
-
-          useEffect(() => {
-            const newsData = t('news.source', {returnObjects:true})
-            setNews(newsData)
-          },[])
   return (
-    <div>
-
-      {display &&(
-        <div>
-        <Header />
-    <div className ="top">
-            {showTop && (
-             <>
-            <button className="btn__top" onClick={scrollToTop}>
-            <i className="fa-solid fa-angle-up"></i>
-            </button>
-            <button className ='btn-en btn_en-fixed ' onClick={()=>changeLanguage('en')}></button>                
-            <button className ='btn-ja btn_ja-fixed' onClick={()=>changeLanguage('ja')}></button>  
-            {/* <button className ='btn-vie btn_vie-fixed' onClick={()=>changeLanguage('vie')}></button>   */}
-            {/* <button className ='btn-kor btn_kor-fixed' onClick={()=>changeLanguage('kor')}></button>   */}
-            </>        
-                    )}
-    </div>
-      <ScrollToTop />
-      <NewRouter news={news}/>
-      <Footer />
-      </div>
-        )}
+    <div className='myanmar_container'>
+    <div className='container'>
+      <div className='row justify-content-center align-items-center'>
+        <div className='col-md-12'>
+          <div className="branch-closed-notice">
+          <h2>Azumaya Myanmar Branch Is Closed</h2>
+          <p>We regret to inform you that the Azumaya Myanmar branch you are attempting to access is presently closed.
+          <br/>Kindly consider visiting an alternate branch. We apologize for any inconvenience this may cause.
+          </p>
+        </div>
+          <div className="container-fluid" >
+            <div className="row justify-content-center align-items-center">
+                <div className="col-md-6">
+                  <div className="content__feature-item m-0">
+                    <div className="content__feature-container m-0" style={{height: '300px'}}>
+                      <div
+                        className="content__feature-img"
+                        style={{background: 'url(https://azumayavietnam.com/image/areaimage/cambodia1.png) center center / cover no-repeat', height:'300px'}}
+                      >
+                          <Link 
+                          className="d-block"
+                          style={{height: '100%'}}
+                          to = 'http://azumayacambodia.com/'
+                      ></Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="content__feature-item m-0">
+                    <div className="content__feature-container m-0" style={{height: '300px'}}>
+                      <div
+                        className="content__feature-img"
+                        style={{background: 'url(https://azumayavietnam.com/image/areaimage/vietnam1.jpg) center center / cover no-repeat', height:'300px'}}
+                      >
+                          <Link 
+                          className="d-block"
+                          style={{height: '100%'}}
+                          to = 'http://azumayavietnam.com/'
+                      ></Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
           </div>
-        )
+        </div>
+      </div>
+    </div>
+    </div>
+  );
 }
 
-export default App
-
-
+export default App;

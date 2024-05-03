@@ -57,16 +57,16 @@ function NewRouter(props) {
         <section>
             <Routes>
                 <Route exact path='/' element={<Home news = {news} />} />
-                <Route path="/service" element={<VietnamService />} />
+                {/* <Route path="/service" element={<VietnamService />} />
                 <Route path="/q&a" element={<Policies />} />
                 <Route path="/reservation" element={<Reservation />} />
                 <Route path="/feature" element={<Feature/>} />
                 <Route path="/feature/:featureID" element={<Feature/>} />
                 <Route path = "/breakfast" element={<VietnamService />} />
                 <Route path = "/rotenburo" element={<VietnamService />} />
-                <Route path = "/massage" element={<VietnamService />} />
+                <Route path = "/massage" element={<VietnamService />} /> */}
                 {/* <Route path="/Service" element={<Service />} /> */}
-                <Route path="/contract" element={<Contract />} />
+                {/* <Route path="/contract" element={<Contract />} />
                 <Route path = "/gallery" element = {<Gallery_PP />} />
                 <Route path="/en/thank-you/:selectedCity" element={<ThankYou />} />
                 <Route path="/ja/thank-you/:selectedCity" element={<ThankYou />} />
@@ -90,9 +90,10 @@ function NewRouter(props) {
                 <Route path="/da-nang/room" element={<DNRoomDetail />} />
                 <Route path="/hai-phong/room" element={<HPRoomDetail />} />
                 <Route path="/phnom-penh-detail/room" element={<PhnomPenhRoomDetail />} />
-                <Route path='*' element={<ErrorPage />} />
+                
                 <Route path='/feedback' element={ <Feedback /> } />                
-                <Route path="/backup" element={<Reservation_backup />} />
+                <Route path="/backup" element={<Reservation_backup />} /> */}
+                <Route path='*' element={<ErrorPage />} />
             </Routes>
         </section>
     );

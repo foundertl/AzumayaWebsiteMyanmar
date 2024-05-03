@@ -33,6 +33,7 @@ import ErrorPage from './container/Units/ErrorPage';
 import Feedback from './container/Units/Feedback';
 import Reservation_backup from './container/Reservation/Reservation_backup'
 import Gallery_PP from './container/Gallery/Gallery';
+import App from './App';
 
 function NewRouter(props) {
     const {news} = props;
@@ -56,7 +57,7 @@ function NewRouter(props) {
     return (
         <section>
             <Routes>
-                <Route exact path='/' element={<Home news = {news} />} />
+                {/* <Route exact path='/' element={<Home news = {news} />} /> */}
                 {/* <Route path="/service" element={<VietnamService />} />
                 <Route path="/q&a" element={<Policies />} />
                 <Route path="/reservation" element={<Reservation />} />
@@ -93,7 +94,7 @@ function NewRouter(props) {
                 
                 <Route path='/feedback' element={ <Feedback /> } />                
                 <Route path="/backup" element={<Reservation_backup />} /> */}
-                <Route path='*' element={<ErrorPage />} />
+                <Route path='*' element={<App />} />
             </Routes>
         </section>
     );
